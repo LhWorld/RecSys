@@ -29,7 +29,6 @@ def readData():
     for lineArr in result:
         data.append([lineArr[0], lineArr[1], 1.0])
     print("==================")
-    print(data)
     return data
     
     
