@@ -14,8 +14,8 @@ def \
     with getPCSDConnection() as db:
        result= []
        try:
-           # query_sql = "select user_id,song_id,action,DATE_FORMAT(created_date, '%Y-%m-%d %T') from fdm_audio_calc_song_play_da where DATE_FORMAT(created_date, '%Y-%m-%d %T')<'2018-04-25 15:20:00'"
-           query_sql = "select user_id,song_id,action,DATE_FORMAT(created_date, '%Y-%m-%d %T') from fdm_audio_calc_song_play_da "
+           query_sql = "select user_id,song_id,action,DATE_FORMAT(created_date, '%Y-%m-%d %T') from fdm_audio_calc_song_play_da where DATE_FORMAT(created_date, '%Y-%m-%d %T')<'2018-07-02 15:20:00' and DATE_FORMAT(created_date, '%Y-%m-%d %T')>'2018-06-02 15:20:00'"
+           # query_sql = "select user_id,song_id,action,DATE_FORMAT(created_date, '%Y-%m-%d %T') from fdm_audio_calc_song_play_da "
            db.cursor.execute(query_sql)
            result_data = db.cursor.fetchall()
            print('共查找出', db.cursor.rowcount, '条数据')
