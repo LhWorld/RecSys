@@ -1,4 +1,5 @@
 # RecSys
+CB :简单的基于标签的推荐策略
 UserCF:基于用户的算法</br>
 UserCF_IIF：改进的基于用户的算法</br>
 ItemCF：基于物品的算法</br>
